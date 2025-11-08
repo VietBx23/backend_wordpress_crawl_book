@@ -12,6 +12,7 @@ import sys
 # ---------------- CONFIG ----------------
 BASE_STORE_URL = "https://www.tadu.com/store/98-a-0-15-a-20-p-{page}-909"
 HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; TaduIDBot/1.0)"}
+NUM_CHAPTERS = 5  # số chương mặc định nếu không truyền từ frontend
 DATA_DIR = Path("data")
 DATA_DIR.mkdir(exist_ok=True)
 
