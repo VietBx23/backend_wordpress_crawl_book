@@ -196,6 +196,9 @@ def crawl_api():
     if not book_ids:
         return jsonify({"error": "Không tìm thấy book nào."}), 404
 
+    # Giới hạn tối đa 10 truyện mỗi lần crawl
+    book_ids = book_ids[:10]
+
     results = []
     errors = []
     with sync_playwright() as p:
